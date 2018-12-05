@@ -1,0 +1,32 @@
+
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			div{
+				width: 100vw;
+				height: 100vh;	
+
+			}
+			#img{
+				top: 12vh;
+			}
+	
+			#tops{
+				height: 50vh;
+				width: 100vw;
+				position: relative;
+			}
+			#middles{
+				height: 10vh;
+				width: 100vw;
+			}
+			#bottoms{
+				width: 100vw;
+				height: 40cm,;
+			}
+			#top>#plate{
+				position: absolute;
+				left: 45px;
+			}
