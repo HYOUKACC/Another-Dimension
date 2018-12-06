@@ -4,29 +4,48 @@
 				padding: 0px;
 				list-style: none;
 			}
-			div{
+			
+			#max{
 				width: 100vw;
-				height: 100vh;	
-
+				height: 100vh;	  
 			}
-			#img{
-				top: 12vh;
-			}
+		
 	
 			#tops{
-				height: 50vh;
+				height: 46vh;
 				width: 100vw;
 				position: relative;
+				background-color: pink;	
 			}
+			
+			#plate,#pic,#sca,#hour,#min,#second{
+				position: absolute;
+				margin: 28px 60px;	
+			}
+
+			#pic,#sca{
+				left: 10px;
+				top: 10px;
+			}
+
+			#hour,#min,#second{
+				left: 115px;
+
+			}
+
+
+
+
+			
+			
+			
+			
 			#middles{
-				height: 10vh;
+				height: 14vh;
 				width: 100vw;
 			}
 			#bottoms{
+				height: 40vh,;
 				width: 100vw;
-				height: 40cm,;
 			}
-			#top>#plate{
-				position: absolute;
-				left: 45px;
-			}
+			
