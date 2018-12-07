@@ -76,8 +76,14 @@
 			position: absolute;
 			top:-10vh;
 			left:10vw;
-			font-size: 15vw;
+			font-size: 10vw;
 			font-family: "微软雅黑";
+		}
+		.content .content1 .alarmC{
+			background-color: rgba(255,255,255,0);
+			border-style: none;
+			font-size: 9vw;
+			text-align: center;
 		}
 		.cyhx .footer{
 			width: 100vw;
@@ -198,14 +204,14 @@
 
 		}
 		.footer .d .d1{
-			width: 20vw;
+			width: 23vw;
 			height: 5vh;
 			float: right;
 			/*background-color:orange ;*/
 			text-align: center;
 			line-height: 5vh;
 			margin-top: 2vh;
-			margin-right: 6vw;
+			margin-right: 3vw;
 		}
 		.footer .e{
 			width: 100vw;
@@ -214,4 +220,5 @@
 			text-align: center;
 			margin-top: 0.5vh;
 		}
+		 .time { display:inline-block; font-size:26px; padding:5px; text-align:center; width:86px; }
 

@@ -11,6 +11,12 @@
       	mui.init();
     </script>
     
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/timedropper.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/timedropper.css">
+	
 </head>
 <body>
 	</head>
@@ -18,21 +24,21 @@
 	<div class="cyhx">
 	<div class="header">
 		<div class="left">
-			<input type="button" value="取消" style="height: 4vh;width: 20vw;background-color: rgba(255,255,255,0.6);"/>
+			<input type="button" value="取消" style="border-radius:2vw;height: 4vh;width: 20vw;background-color: rgba(255,255,255,0.6);"/>
 		</div>
 		<div class="center">
 			<span>添加闹钟啦</span>
 		</div>
 		<div class="right">
-			<input type="button" value="保存" style="height: 4vh;width: 20vw;background-color: rgba(255,255,255,0.6);"/>
+			<input type="button" value="保存" style="border-radius:2vw;height: 4vh;width: 20vw;background-color: rgba(255,255,255,0.6);"/>
 		</div>
 </div>
 
 	
-
 	<div class="content">
 		<div class="content1">
-			<span>12：00</span>
+			<input type="text" class="alarmC" />
+			<script>$( ".alarmC" ).timeDropper();</script>
 		</div>
 	</div>
 	<div class="footer">

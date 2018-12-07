@@ -132,7 +132,9 @@
 				"resources": [
 					"css/闹钟.css"
 				],
-				"refer": [],
+				"refer": [
+					"personal.html"
+				],
 				"priority": 0
 			}
 		},

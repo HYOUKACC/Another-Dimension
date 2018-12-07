@@ -2,6 +2,9 @@
 	"index.html": {
 		"resources": [
 			"css/闹钟.css"
+		],
+		"refer": [
+			"personal.html"
 		]
 	}
 }
