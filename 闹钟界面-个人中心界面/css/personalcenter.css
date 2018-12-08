@@ -1,0 +1,140 @@
+*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.grzx{
+			width: 100vw;
+			height:100vh;
+			/*border:10px solid orange;*/
+			margin:0 auto;
+	}
+	span{
+		font-family: "微软雅黑";
+	}
+		.grzx .header{
+			width: 100vw;
+			height: 17vh;
+			background-color: rgba(255,153,204,1);
+			margin:0 auto;
+		}
+		
+		.grzx .content{
+			width: 100vw;
+			height: 76vh;
+			background-color: rgba(255,240,245,1);
+			margin:0 auto;
+			border-top-left-radius: 10vw;
+			border-top-right-radius: 10vw;
+		}
+			.grzx .content .con1{
+			width: 100vw;
+			height: 18vh;
+			/*background-color: yellow;*/
+			margin:0 auto;
+			float: left;
+			position: relative;
+		}
+		.grzx .content .con1 img{
+			width: 28vw;
+			height: 17vh;
+			position: absolute;
+			top:-5vh;
+			left:2vw;
+		}
+		.grzx .content .con1 span{
+			position: absolute;
+			right:58vw;
+			top:-1.5vh;
+		}
+		.grzx .content .a1{
+			width: 100vw;
+			height: 11vh;
+			background-color: rgba(255,255,255,1);
+			margin:0 auto;
+			float: left;
+			border-radius: 4vw;
+		}
+		.grzx .content .a1 span{
+			width: 20vw;
+			height:8vh;
+			line-height: 8vh;
+			float:left;
+			margin-top: 2vh;
+			margin-left: 3vw;
+		}
+		.grzx .content .b1{
+			width: 100vw;
+			height: 11vh;
+			background-color: rgba(255,255,255,1);	
+			margin:0 auto;
+			float: left;
+			margin-top: 0.5vh;
+			border-radius: 4vw;
+		}
+		.grzx .content .b1 span{
+			width: 20vw;
+			height:8vh;
+			line-height: 8vh;
+			float:left;
+			margin-top: 2vh;
+			margin-left: 3vw;
+		}
+		.grzx .content .c1{
+			width: 100vw;
+			height: 11vh;
+			background-color: rgba(255,255,255,1);
+			margin:0 auto;
+			float: left;
+			margin-top: 0.5vh;
+			border-radius: 4vw;
+		}
+		.grzx .content .c1 span{
+			width: 20vw;
+			height:8vh;
+			line-height: 8vh;
+			float:left;
+			margin-top: 2vh;
+			margin-left: 3vw;
+		}
+		.grzx .content .d1{
+			width: 100vw;
+			height: 11vh;
+			background-color: rgba(255,255,255,1);
+			margin:0 auto;
+			float: left;
+			margin-top: 0.5vh;
+			border-radius: 4vw;
+		}
+		.grzx .content .d1 span{
+			width: 20vw;
+			height:8vh;
+			line-height: 8vh;
+			float:left;
+			margin-top: 2vh;
+			margin-left: 3vw;
+		}
+		.grzx .content .e1{
+			width: 100vw;
+			height: 14.5vh;
+		/*	background-color: orange; */
+			margin:0 auto;
+			float: left;
+			position: relative;
+		}
+		.grzx .content .e1 input{
+			width: 60vw;
+			height: 5vh;
+			margin:0 auto;
+			position: absolute;
+			top:3vh;
+			left:15vw;
+		}
+		
+		.grzx .footer{
+			width: 100vw;
+			height: 7vh;
+			background-color: white;
+			margin:0 auto;
+		}
+		
+

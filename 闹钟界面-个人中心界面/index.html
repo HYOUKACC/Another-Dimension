@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/alarm.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/timedropper.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/timedropper.css">
+	
+</head>
+<body>
+	</head>
+<body>
+	<div class="cyhx">
+	<div class="header">
+		<div class="left">
+			<input type="button" value="取消" style="border-radius:2vw;height: 4vh;width: 20vw;background-color: rgba(255,255,255,0.6);"/>
+		</div>
+		<div class="center">
+			<span>添加闹钟啦</span>
+		</div>
+		<div class="right">
+			<input type="button" value="保存" style="border-radius:2vw;height: 4vh;width: 20vw;background-color: rgba(255,255,255,0.6);"/>
+		</div>
+</div>
+
+	
+	<div class="content">
+		<div class="content1">
+			<input type="text" class="alarmC" />
+			<script>$( ".alarmC" ).timeDropper();</script>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="a">
+			<span>重复</span>
+			<div class="a1">
+				<select style="height: 6vh;width: 25vw;background-color: rgba(255,255,255,0);">
+					<option value="仅此一次">仅此一次</option>
+					<option value="总是">总是</option>
+				</select>
+			</div>
+		</div>
+		<div class="b">
+			<span>铃声</span>
+			<div class="b1">
+				<select style="height: 6vh;width: 25vw;background-color: rgba(255,255,255,0);">
+					<option value="未闻花名">未闻花名</option>
+					<option value="你的背包">你的背包</option>
+				</select>
+			</div>
+		</div>
+		<div class="c">
+			<span>闹钟名</span>
+			<div class="c1">
+				<select style="height: 6vh;width: 25vw;background-color: rgba(255,255,255,0);">
+					<option value="早上好啊">早上好啊</option>
+					<option value="下午好啊">下午好啊</option>
+				</select>
+			</div>
+		</div>
+		<div class="d">
+			<span>解锁方式</span>
+			<div class="d1">
+				<select style="height: 6vh;width: 25vw;background-color: rgba(255,255,255,0);">
+					<option value="普通">普通</option>
+					<option value="困难">困难</option>
+				</select>
+			</div>
+		</div>
+		<div class="e">
+			
+		</div>
+	</div>
+</div>
+</body>
+</html>
