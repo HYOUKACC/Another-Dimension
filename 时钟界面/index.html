@@ -3,13 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title></title>
+    <title>时钟界面</title>
     <script src="js/mui.min.js"></script>
-    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/mui.css" rel="stylesheet"/>
+    
     <link href="css/time.css" rel="stylesheet"/>
+    <script src="js/run.js"></script>
     <script type="text/javascript" charset="utf-8">
       	mui.init();
     </script>
+    
 </head>
 <body>
 	<div class="mui-content">
@@ -24,28 +27,69 @@
 				</div>
 
 				<div id="sca">
-					<img src="images/scale.png" width="230vw" height="230vh">
+					<img src="images/scale.png" width="240vw" height="240vh">
 				</div>
 
+
 				<div id="hour">
-					<img src="images/hourPointer.png" width="20vw" height="120vh">
+					<img src="images/hourPointer.png" width="6 px" height="240vh">
 				</div>
 
 				<div id="min">
-					<img src="images/minuteHand.png" width="20vw" height="120vh">
+					<img src="images/minuteHand.png" width="6px" height="240vh">
 				</div>
-
+  
 				<div id="second">
-					<img src="images/secondHand.png" width="20vw" height="120vh">
+					<img src="images/secondHand.png" width="6px" height="240vh">
 				</div>
 			</div>
-			
 			
 			
 			<div id="middles">
 			</div>
 			
 			<div id="bottoms">
+				<ul id="OA_task_1" class="mui-table-view" style="opacity:0.7; width: 100vw;">
+					
+				<li class="mui-table-view-cell" style="border-radius: 80vw" >
+					<div  width="30vw">
+						闹钟1
+					</div>
+					<div class="mui-slider-left mui-disabled">
+						<a class="mui-btn mui-btn-red">删除</a>
+					</div>
+					<div class="mui-slider-handle" width="30vw">
+						右滑显示删除按钮
+					</div>
+			
+				</li>
+				
+				<li class="mui-table-view-cell"  style="border-radius: 80vw">
+					<div  width="30vw">
+						闹钟2
+					</div>
+					<div class="mui-slider-left mui-disabled">
+						<a class="mui-btn mui-btn-red">删除</a>
+					</div>
+					<div class="mui-slider-handle" width="30vw">
+						右滑显示删除按钮
+					</div>
+				</li>
+				
+				
+				<li class="mui-table-view-cell"  style="border-radius: 80vw">
+					<div  width="30vw">
+						闹钟3
+					</div>
+					<div class="mui-slider-left mui-disabled">
+						<a class="mui-btn mui-btn-red">删除</a>
+					</div>
+					<div class="mui-slider-handle" width="30vw">
+						右滑显示删除按钮
+					</div> 
+				</li>  
+				
+				</ul>
 			</div>
 		</div>
 	</div>

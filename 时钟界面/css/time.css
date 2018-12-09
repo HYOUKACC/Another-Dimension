@@ -10,7 +10,6 @@
 				height: 100vh;	  
 			}
 		
-	
 			#tops{
 				height: 46vh;
 				width: 100vw;
@@ -20,16 +19,17 @@
 			
 			#plate,#pic,#sca,#hour,#min,#second{
 				position: absolute;
-				margin: 28px 60px;	
+				margin: 5vw 10vh;	
 			}
 
 			#pic,#sca{
-				left: 10px;
-				top: 10px;
+				left: 3vw;
+				top: 1.3vh;
 			}
 
 			#hour,#min,#second{
-				left: 115px;
+				top: 0.1vh;
+				left: 34vw;
 
 			}
 
@@ -43,9 +43,13 @@
 			#middles{
 				height: 14vh;
 				width: 100vw;
+				background-color: yellow;	
 			}
 			#bottoms{
+				position: relative;
 				height: 40vh,;
 				width: 100vw;
+				background-color: pink;	
 			}
 			
+		
