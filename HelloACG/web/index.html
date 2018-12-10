@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ajax json 例子</title>
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$.get("/ImagesServlet?page=1",function(data,status){
+			var obj = eval ("(" + data + ")");
+
+
+			 $("#url").html(obj.url);
+			 $("#length").html(obj.url.length);
+			 var url = obj.url[2];
+
+			 document.getElementById('img').src=url;
+			 
+		});
+	});
+});
+</script>
+</head>
+<body>
+<button>发送一个 HTTP GET 请求并获取返回结果</button>
+<h4>URL:<br></h4>
+<p id="url">URL:</p>
+<br>
+<h4>length<br></h4>
+<p id="length">length:</p>
+<img src="?"  id="img">
+</body>
+</html>
