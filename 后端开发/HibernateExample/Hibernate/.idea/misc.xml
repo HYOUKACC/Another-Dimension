@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectResources">
+    <resource url="http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd" location="C:/hibernate-release-5.3.7.Final/project/hibernate-core/src/main/resources/org/hibernate/hibernate-configuration-3.0.dtd" />
+    <resource url="http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" location="C:/hibernate-release-5.3.7.Final/project/hibernate-core/src/main/resources/org/hibernate/hibernate-mapping-3.0.dtd" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
