@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="DAO.imgesURL.ImgesURL" table="imagesurl" >
+        <!--建立类属性哪一个是主键  还要跟数据库当中主键进行对应-->
+        <id name="imges_id" column="id_" >
+            <generator class="native"/>
+            <!--generator指主键的生成方式 -->
+        </id>
+        <!--建立类中的普通属性与数据库当中字段进行关联-->
+        <property name="imges_name" column="name_" />
+        <property name="imges_url" column="url_"/>
+        <property name="imges_note" column="note_"/>
+<!--
+
+        &lt;!&ndash;一对多&ndash;&gt;
+        <set name="linkmens" cascade="save-update,delete" inverse="true">&lt;!&ndash;set属性名称&ndash;&gt;
+            <key column="link_cust_id"></key>&lt;!&ndash;外键&ndash;&gt;
+            <one-to-many class="com.myxq.domain.Linkman"></one-to-many>
+        </set>
+-->
+
+    </class>
+</hibernate-mapping>

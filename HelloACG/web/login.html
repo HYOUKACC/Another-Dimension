@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body >
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $.get("/ImagesServlet?page=1",function(data,status){
+                var obj = eval ("(" + data + ")");
+
+
+                $("#url").html(obj.url);
+                $("#length").html(obj.url.length);
+            });
+        });
+    });
+</script>
+
+<form method="post" action="/loginServlet">
+    用户名：<input type="text" name="userId"/><br/><br/>
+    密码：<input type="password" name="passWord"/><br/><br/>
+    <input type="submit" >
+</form>
+</body>
+
+</html>
