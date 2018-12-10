@@ -1,0 +1,95 @@
+
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			
+			#max{
+				width: 100vw;
+				height: 100vh;	  
+			}
+		
+			#tops{
+				height: 45vh;
+				width: 100vw;
+				position: relative;
+				/*background-color: pink;*/
+			}
+			
+			#plate,#pic,#sca,#hour,#min,#second{
+				position: absolute;
+				margin: 2vh 14.9vw;	
+			}
+
+			#pic,#sca{
+				left: 3vw;
+				top: 1.3vh;
+			}
+
+			#hour,#min,#second{
+				top: 0.1vh;
+				left: 34vw;
+
+			}
+			
+			#middles{
+				height: 12vh;
+				width: 100vw;
+				position: relative;
+				
+			}
+			#bottoms{
+				position: relative;
+				height: 40vh,;
+				width: 100vw;
+				/*background-color: pink;*/	
+			}
+			
+			#noonAlarmPic{
+				
+				position: absolute;
+				left: 5vw;
+				height: 8vh; 
+				width: 16vw;
+				background-color: rgba(255,255,255,0.8);
+				border-radius: 5vw;
+				
+			}
+			
+			#noonFont{
+				position: absolute;
+				left: 4.5vw;
+				top: 1vh;
+			}
+			
+			#noonFont{
+				font-size: 4vh;
+			}
+			
+			#noonWord{
+				position: absolute;
+				top: 5vh;
+				left: 2vw;
+			}
+			
+			#msg{
+				
+				position: absolute;
+				left: 25vw;
+				height: 8vh; 
+				width: 60vw;
+				background-color: rgba(255,255,255,0.8);
+				border-radius: 5vw;
+				display: none;
+				
+				
+			}
+			
+			#msgP{
+				position: absolute;
+				left: 15vw;
+				top: 2.5vh;
+			}
+			
+			

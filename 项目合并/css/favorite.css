@@ -1,0 +1,77 @@
+				*{
+					margin: 0px;
+					padding: 0px;
+				}
+				
+				.total{
+				width:100vw;
+				height:92vh;
+				margin:0 auto;
+				position: relative;
+				/*background:green;*/
+				}
+			.total .header{
+				width:100vw;
+				height:8vh;
+				margin:0 auto;
+				background-color: rgba(51,51,51,1);
+				text-align: center;
+				position: absolute;
+				
+			}
+			 .total .header span{
+				font-family: "微软雅黑";
+				font-size:3.5vh ;
+				color:white;
+				line-height: 10vh;
+				
+			}
+			.total .content{
+				width:100vw;
+				height:70vh;
+				margin:0 auto;
+				
+			}
+			.total .content img{
+				width:100vw;
+				height:86.5vh;
+			}
+			.total .footer{
+				width:100vw;
+				height:7vh;
+				margin:0 auto;
+				/*background: red;*/
+				position: absolute;
+				top:86.5vh;
+				
+				
+			}
+			.total .footer .f1{
+				width:25vw;
+				height:6.5vh;
+				/*background: blue;*/
+				float: left;
+			}
+			.total .footer .f2{
+				width:50vw;
+				height:6.5vh;
+				/*background: yellow;*/
+				position: absolute;
+				margin: 0 auto;
+				left:25vw;
+				background-color:white;
+				opacity: 0.9;
+			}
+			.total .footer .f3{
+				width:25vw;
+				height:6.5vh;
+				/*background: green;*/
+				float:right;
+			}
+			.total .footer .f1 input{
+				font-family: "微软雅黑";
+			}
+			.total .footer .f3 input{
+				font-family: "微软雅黑";
+			}
+			
