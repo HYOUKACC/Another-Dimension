@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="HelloACG:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/HelloACG_war_exploded</output-path>
+    <output-path>C:/下载</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="HelloACG/web/Web" />
       <element id="directory" name="WEB-INF">

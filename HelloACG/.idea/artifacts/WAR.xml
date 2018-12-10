@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WAR">
+    <output-path>$PROJECT_DIR$/..</output-path>
+    <root id="archive" name="WAR.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="antlr-2.7.7" />
+          <element id="library" level="project" name="gson-2.8.0" />
+          <element id="library" level="project" name="junit-4.0" />
+        </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="HelloACG" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="HelloACG/web/Web" />
+    </root>
+  </artifact>
+</component>
