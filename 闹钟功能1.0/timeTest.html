@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+
+			mui.plusReady(function(){
+				
+				mui("body").on('tap','button',function(event){
+					
+					if (id == "test") {
+						tesr();
+					}
+					
+				});
+				
+				function tesr(){
+					var Calendar = plus.android.importClass('java.util.Calendar');
+                var calendar = Calendar.getInstance(); // 存变量
+                // 11点4分执行
+				//
+				calendar.set(Calendar.HOUR_OF_DAY, hour);
+				var nowTime=new Date();//当前日期javascript
+				var nowHour=d.getHours();
+				if(nowHour>6){
+					calendar.add(calendar.DATE,1);
+				}
+				var date=calendar.getTime();
+				
+				console.log(date);
+				
+				}
+				
+				
+			}
+				
+				
+				
+				
+		);
+		</script>
+		
+		
+		<button id="test">sss</button>
+		
+		
+	</body>
+
+</html>
