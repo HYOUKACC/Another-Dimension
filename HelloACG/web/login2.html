@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ajax json 例子</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+
+     /* $(document).ready(function(){
+      $("button").click(function(){
+          $.post("http://localhost:8080/loginServlet",
+              {
+                  userId:"001",
+                  password:"12345"
+              },
+              function(data,status){
+                  var obj = eval ("(" + data + ")");
+                  $("#url").html(obj.profilePictureURL);
+                  $("#nickName").html(obj.nickName);
+                  alert("Data: " + obj + "\nStatus: " + status);
+              });
+      });
+      });*/
+
+     /* $(document).ready(function(){
+          $("button").click(function(){
+              $.get("/loginServlet?userId=001&password=12345",
+                  function(data,status){
+                      var obj = eval ("(" + data + ")");
+                      $("#url").html(obj.profilePictureURL);
+                      $("#nickName").html(obj.nickName);
+                      alert("Data: " + obj + "\nStatus: " + status);
+                  });
+          });
+      });*/
+
+     $(document).ready(function(){
+         $("button").click(function(){
+             $.get("/loginServlet?userId=001&passWord=12345",function(data,status){
+
+                 var obj = JSON.parse(data);
+                 alert(obj.userId + obj.nickName + obj.profilePictureURL);
+                 $("#url").html(obj.profileURL);
+                 $("#nickName").html(obj.nickName);
+
+
+             });
+         });
+     });
+
+     /*$(document).ready(function(){
+         $("button").click(function(){
+             $.post("http://localhost:8080/loginServlet",
+                 {userId:"001",password:"12345"},
+                 function(data,status){
+                 var obj = JSON.parse(data);
+                 alert(obj.userId + obj.nickName + obj.profilePictureURL);
+                 $("#url").html(obj.profileURL);
+                 $("#nickName").html(obj.nickName);
+
+
+             });
+         });
+     });*/
+    </script>
+</head>
+<body>
+<button>发送一个 HTTP GET 请求并获取返回结果</button>
+<h4>URL:<br></h4>
+<p id="url">URL:</p>
+<br>
+<h4>length<br></h4>
+<p id="nickName">length:</p>
+</body>
+</html>

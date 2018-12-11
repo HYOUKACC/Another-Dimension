@@ -4,28 +4,46 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-</head>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script>
 
-<body >
-<script>
-    $(document).ready(function(){
-        $("button").click(function(){
-            $.get("/ImagesServlet?page=1",function(data,status){
-                var obj = eval ("(" + data + ")");
+        $(document).ready(function(){
+            $("#t").click(function(){
+                $.post("/loginServlet",
+                    {"userId":"001","password":"12345"},
+                    function(data,status){
+
+                        var obj = eval("(" + data + ")");
+                        //用户名：obj.userId[0]
+                        //头像URL： obj.profilePictureURL[0]
+                        // 昵称 : obj.nickName[0]
+                        /*document.getElementById("p1").value=obj.userId[0];
+                        document.getElementById("p2").value=obj.profilePictureURL[0];
+                        document.getElementById("p3").value=obj.nickName[0];*/
 
 
-                $("#url").html(obj.url);
-                $("#length").html(obj.url.length);
+                        $("#p2").html(obj.nickName);
+                        console.log(obj.nickName);
+                        alert(obj.nickName[0] + "  "     + obj.profilePictureURL[0]);
+
+                    });
             });
         });
-    });
-</script>
 
-<form method="post" action="/loginServlet">
+    </script>
+</head>
+
+
+<body >
+<form id="f" method="post">
     用户名：<input type="text" name="userId"/><br/><br/>
     密码：<input type="password" name="passWord"/><br/><br/>
-    <input type="submit" >
+    <input type="submit" id="t"/>
 </form>
+<p id="p1"><br></p>
+<p id="p2">2 </p>
+<p id="p3"> 3</p>
+<p id="p4">4 </p>
 </body>
 
 </html>

@@ -23,7 +23,7 @@ public class ImagesServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		request.setCharacterEncoding("utf-8");
-		response.setCharacterEncoding("utf-8");
+		response.setHeader("Content-type", "text/html;charset=UTF-8");
 		int page=0;
 		//
 		//以防类型转换出现问题
@@ -48,8 +48,6 @@ public class ImagesServlet extends HttpServlet {
 		Gson gson = new Gson();
 		String str=gson.toJson(urlJson);
 
-		System.out.println("JSON:");
-		System.out.println(str);
 
 		response.getWriter().append(str);
 	}

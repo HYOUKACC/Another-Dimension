@@ -18,6 +18,6 @@
 		<!--自动创建表-->
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		<mapping resource="DAO/imgesURL/Images.hbm.xml"/>
-		<mapping resource="DAO/login/User.hbm.xml"/>
+		<mapping resource="DAO/user/User.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

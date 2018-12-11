@@ -1,10 +1,19 @@
-package DAO.login;
+package DAO.user;
 
 public class User {
     private long number;
     private String userId;
     private String password;
     private String nickName;
+    private String profilePictureURL;
+
+    public String getProfilePictureURL() {
+        return profilePictureURL;
+    }
+
+    public void setProfilePictureURL(String profilePictureURL) {
+        this.profilePictureURL = profilePictureURL;
+    }
 
     public long getNumber() {
         return number;
@@ -40,13 +49,12 @@ public class User {
 
     @Override
     public String toString() {
-        return "UserJSON{" +
+        return "User{" +
                 "number=" + number +
                 ", userId='" + userId + '\'' +
                 ", password='" + password + '\'' +
                 ", nickName='" + nickName + '\'' +
+                ", profilePictureURL='" + profilePictureURL + '\'' +
                 '}';
     }
-
-
 }
