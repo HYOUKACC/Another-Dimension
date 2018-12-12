@@ -1,0 +1,77 @@
+				*{
+					margin: 0px;
+					padding: 0px;
+				}
+				
+			.Ftotal{
+				width:100vw;
+				height:92vh;
+				margin:0 auto;
+				position: relative;
+				/*background:green;*/
+				}
+			.Ftotal .header{
+				width:100vw;
+				height:8vh;
+				margin:0 auto;
+				background-color: rgba(51,51,51,1);
+				text-align: center;
+				position: absolute;
+				
+			}
+			 .Ftotal .header span{
+				font-family: "微软雅黑";
+				font-size:3.5vh ;
+				color:white;
+				line-height: 10vh;
+				
+			}
+			.Ftotal .Fcontent{
+				width:100vw;
+				height:70vh;
+				margin:0 auto;
+				
+			}
+			.Ftotal .Fcontent img{
+				width:100vw;
+				height:86.5vh;
+			}
+			.Ftotal .Ffooter{
+				width:100vw;
+				height:7vh;
+				margin:0 auto;
+				/*background: red;*/
+				position: absolute;
+				top:86.5vh;
+	
+				
+			}
+			.Ftotal .Ffooter .f1{
+				width:25vw;
+				height:6.5vh;
+				/*background: blue;*/
+				float: left;
+			}
+			.Ftotal .Ffooter .f2{
+				width:50vw;
+				height:6.5vh;
+				/*background: yellow;*/
+				position: absolute;
+				margin: 0 auto;
+				left:25vw;
+				background-color:white;
+				opacity: 0.9;
+			}
+			.Ftotal .Ffooter .f3{
+				width:25vw;
+				height:6.5vh;
+				/*background: green;*/
+				float:right;
+			}
+			.Ftotal .Ffooter .f1 input{
+				font-family: "微软雅黑";
+			}
+			.Ftotal .Ffooter .f3 input{
+				font-family: "微软雅黑";
+			}
+			

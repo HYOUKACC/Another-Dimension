@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/iconfont.css" rel="stylesheet"/>
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({
+      	
+      		gestureConfig:{
+      			longtap:true
+      		}
+      	    	
+      	});
+      	  
+      	  
+      	  mui.plusReady(function(){
+      	  		
+      	  		showList(); 
+      	  })
+      	  
+      	var p;
+      	var page=1;
+      	
+    </script>
+     <style type="text/css">
+    	.mui-content{
+    		background-color: pink;
+    	} 
+    	
+    </style>
+    
+    <!--闹钟界面引用文件 -->
+    <link href="css/alarm.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/timedropper.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/timedropper.css">
+	<link rel="stylesheet" type="text/css" href="css/personalcenter.css"/>
+	
+	<!--闹钟逻辑功能引用文件 -->
+	<script src="js/addAlarm.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/setTimeAndId.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!--时钟界面引用文件 -->
+	<link href="css/time.css" rel="stylesheet"/>
+    <script src="js/run.js"></script>
+     
+    <!--创意工坊引用文件 -->
+    <link rel="stylesheet" type="text/css" href="css/worshop.css"/>
+     
+    <script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>	
+    <!--好感度引用文件 -->
+   	<link rel="stylesheet" type="text/css" href="css/favorite.css"/>
+    
+</head>
+<body>
+	
+	<div class="mui-content">
+		
+		 <!--描述：底部导航栏界面-->
+		<nav class="mui-bar mui-bar-tab" style="background-color:rgba(255,255,255,0.6);">
+		    
+		    <a class="mui-tab-item mui-active" href="#clock" id="whichClock">
+		    	<span class="mui-icon iconfont icon-clock"></span>
+		       
+		    </a>
+		    
+		    <a class="mui-tab-item" href="#alarmclock">
+		       <span class="mui-icon iconfont icon-shizhongnaolingjishixianshi2"></span>		       
+		    </a>
+		    
+		    <a class="mui-tab-item" href="#favor">
+		        <span class="mui-icon  iconfont icon-aixin"></span>
+		    </a>
+		    
+		    <a class="mui-tab-item" href="#workShop">
+		        <span class="mui-icon iconfont icon-weigongfang"></span>
+		        
+		    </a>
+		   
+		</nav>
+		
+		
+		<!--描述：时钟界面 -->
+		<div id="clock" class="mui-control-content mui-active">
+            <div id="max">
+				<div id="tops">
+					<div id="touch">					
+						<div id="plate">
+							<img src="images/dialPlate.png" width="250vw" height="250vh" >
+						</div>
+				
+						<div id="pic">
+							<img src="images/picture.png" width="230vw" height="230vh">
+						</div>
+
+						<div id="sca">
+							<img src="images/scale.png" width="240vw" height="240vh">
+						</div>
+
+						<div id="hour">
+							<img src="images/hourPointer.png" width="6px" height="240vh">
+						</div>
+
+						<div id="min">
+							<img src="images/minuteHand.png" width="6px" height="240vh">
+						</div>
+  
+						<div id="second">
+							<img src="images/secondHand.png" width="6px" height="240vh">
+						</div>
+					</div>
+				</div>
+			
+			
+				<div id="middles">
+					<div id="noonAlarmPic">
+						<span class="mui-icon iconfont icon-icon219" id="noonFont"></span>
+						<span id="noonWord" style="font-size:3vw;font-weight: bold;">午睡闹钟</span>											
+					</div>
+					 <div id="msg">
+					 	<span id="msgP" style="font-size: 4vw;">短暂休息一下吧~</span>
+					 </div>
+				</div>
+			
+				<div id="bottoms">
+					<ul id="OA_task_1" class="mui-table-view" style="opacity:0.55; width: 100vw;height: 43vh;">					
+						<li class="mui-table-view-cell" style="border-radius: 80vw;" >
+							<div  width="30vw">
+								<span class="mui-icon iconfont icon-shuzi1"></span>
+							</div>
+							<div class="mui-slider-left mui-disabled">
+								<a class="mui-btn mui-btn-red" id="1">删除</a>
+							</div>
+							<div class="mui-slider-handle" width="30vw" >
+								<span id="firstAla" style="font-size: 3vh;"></span>
+								<span id="firstL" style="font-size:2vh;top:-2vh;"></span>
+							</div>			
+						</li>
+				
+						<li class="mui-table-view-cell"  style="border-radius: 80vw" >
+							<div  width="30vw">
+								<span class="mui-icon iconfont icon-shuzi2"></span>
+							</div>
+							<div class="mui-slider-left mui-disabled">
+								<a class="mui-btn mui-btn-red" id="2">删除</a>
+							</div>
+							<div class="mui-slider-handle" width="30vw">
+								<span id="secondAla" style="font-size: 3vh;"></span>
+								<span id="secondL" style="font-size:2vh;top:-2vh;"></span>
+							</div>
+						</li>
+								
+						<li class="mui-table-view-cell"  style="border-radius: 80vw" >
+							<div  width="30vw">
+								<span class="mui-icon iconfont icon-shuzi3"></span>
+							</div>
+							<div class="mui-slider-left mui-disabled">
+								<a class="mui-btn mui-btn-red" id="3">删除</a>
+							</div>
+							<div class="mui-slider-handle" width="30vw">
+								<span id="thirdAla" style="font-size: 3vh;"></span>
+								<span id="thirdL" style="font-size:2vh;top:-2vh;"></span>
+							</div> 
+						</li>
+						
+						
+				
+					</ul>
+				</div>
+			</div>                                                  	   		
+		</div>
+
+		
+
+
+		<!--描述：闹钟界面-->
+		<div id="alarmclock" class="mui-control-content ">
+			<div class="cyhx">
+				<div class="header">
+					<div class="left">
+						<a class="mui-tab-item mui-active"  id="whichClock">
+							<input type="button"  value="取消" id="close" style="border-radius:2vw;height: 4.5vh;width: 20vw;background-color: rgba(255,255,255,0.6);"/>
+						</a>
+					</div>
+				
+					<div class="center">
+						<span>添加闹钟啦</span>
+					</div>
+					
+					 
+					<div class="right">
+						<input type="button" id="alarm" value="保存" style="border-radius:2vw;height: 4.5vh;width: 20vw;background-color: rgba(255,255,255,0.6);"/>
+					</div>
+				</div>
+
+
+	
+				<div class="content">
+					<div class="content1">
+						<input type="text" class="alarmC" id="witchTime" />
+						<script>$( ".alarmC" ).timeDropper();</script>
+					</div>
+				</div>
+				
+				<div class="footer">
+					<div class="a">
+						<span>重复</span>
+						<div class="a1">
+							<select style="height: 6vh;width: 25vw;background-color: rgba(255,255,255,0);">
+								<option value="仅此一次">仅此一次</option>
+								<!--
+                                	<option value="总是">总是</option>
+                                -->
+							</select>
+						</div>
+					</div>
+					
+					<div class="b">
+						<span>铃声</span>
+						<div class="b1">
+							<select style="height: 6vh;width: 25vw;background-color: rgba(255,255,255,0);">
+								<option value="未闻花名">未闻花名</option>
+								<!--
+                                	<option value="你的背包">你的背包</option>
+                                -->
+								
+							</select>
+						</div>
+					</div>
+					
+					<div class="c">
+						<span>闹钟名</span>
+						<div class="c1">
+							<select style="height: 6vh;width: 25vw;background-color: rgba(255,255,255,0);">
+								<option value="早上好啊">Hello</option>
+								<!--
+                                	<option value="下午好啊">下午好啊</option>
+                                -->
+								
+							</select>
+						</div>
+					</div>
+					
+					<div class="d">
+						<span>解锁方式</span>
+						<div class="d1">
+							<select style="height: 6vh;width: 25vw;background-color: rgba(255,255,255,0);">
+								<option value="普通">普通</option>
+								<!--
+                                	<option value="困难">困难</option>
+                                -->
+								
+								
+							</select>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<!--描述：好感度界面-->
+		<div id="favor" class="mui-control-content ">
+			<div class="Ftotal">
+				<div class="header">
+					<span>纱雾</span>
+				</div>
+			
+				<div class="Fcontent">
+					<img src="images/shawu.jpg">
+				</div>
+			
+				<div class="Ffooter">
+					<div class="f1">
+						<input type="button" value="添加" style="height: 5.6vh;width: 25vw;background-color: rgba(237,232,232,0.9);">
+					</div>
+					<div class="f2">
+					</div>
+					<div class="f3">
+						<input type="button" value="发送" style="height: 5.6vh;width: 25vw;background-color: rgba(237,232,232,0.9);">
+					</div>
+			
+				</div>
+			</div>	
+		</div>
+		
+		 
+		<!--描述：创意工坊界面-->
+		<div id="workShop" class="mui-control-content" >
+			<div id="slider" class="mui-slider" >
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" >
+					<a class="mui-control-item" href="#item1mobile" style="font-family:'微软雅黑';font-weight: bold;color: #FFFFFF;">创意工坊</a>	
+					<a class="mui-control-item" href="#item2mobile" style="font-family:'微软雅黑';font-weight: bold;color: #FFFFFF;">个人中心</a>					
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6" style="background-color: rgb(255,255,255);border-radius: 3px;width: 100vw;"></div>
+				<div class="mui-slider-group" style="height: 93.5vh;width: 100vw;" > 
+					
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll" id="scro01">
+								<div class="bigone"id="bigoneId">
+									<div class="bigleft">
+										
+										<div class="mui-card">
+											<!--页眉，放置标题-->
+								
+											<!--内容区-->
+											<div class="mui-card-content mui-card-media" style="height:35vw;width:auto;">
+												<img src="?" id="img0"/>
+											</div>
+											<!--页脚，放置补充信息或支持的操作-->
+											<div class="mui-card-footer">
+												<div class="mui-media-body">
+													<a href=""><span class="mui-icon iconfont icon-xiazai" style="color: #999999;"></span></a>
+												</div>
+												<div class="mui-media-body">
+													<a href="" ><span class="mui-icon iconfont icon-aixin" style="color: #999999;"></a>
+												</div>
+											</div>
+										</div>
+								
+										<div class="mui-card">
+											<!--页眉，放置标题-->
+								
+											<!--内容区-->
+											<div class="mui-card-content mui-card-media" style="height:35vw;width:auto;">
+												<img src="?" id="img1"/>
+											</div>
+											<!--页脚，放置补充信息或支持的操作-->
+											<div class="mui-card-footer">
+												<div class="mui-media-body">
+													<a href=""><span class="mui-icon iconfont icon-xiazai" style="color: #999999;"></span></a>
+												</div>
+												<div class="mui-media-body">
+													<a href="" ><span class="mui-icon iconfont icon-aixin" style="color: #999999;"></a>
+												</div>
+											</div>
+										</div>
+								
+										<div class="mui-card">
+											<!--页眉，放置标题-->
+								
+											<!--内容区-->
+											<div class="mui-card-content mui-card-media" style="height:35vw;width:auto;">
+												<img src="?" id="img2"/>
+											</div>
+											<!--页脚，放置补充信息或支持的操作-->
+											<div class="mui-card-footer">
+												<div class="mui-media-body">
+													<a href=""><span class="mui-icon iconfont icon-xiazai" style="color: #999999;"></span></a>
+												</div>
+												<div class="mui-media-body">
+													<a href="" ><span class="mui-icon iconfont icon-aixin" style="color: #999999;"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="bigright">
+										
+										<div class="mui-card">
+											<!--页眉，放置标题-->
+								
+											<!--内容区-->
+											<div class="mui-card-content mui-card-media" style="height:35vw;width:auto;">
+													<img src="?" id="img3"/>
+											</div>
+											<!--页脚，放置补充信息或支持的操作-->
+											<div class="mui-card-footer">
+												<div class="mui-media-body">
+													<a href=""><span class="mui-icon iconfont icon-xiazai" style="color: #999999;"></span></a>
+												</div>
+												<div class="mui-media-body">
+													<a href="" ><span class="mui-icon iconfont icon-aixin" style="color: #999999;"></a>
+												</div>
+											</div>
+										</div>
+										<div class="mui-card">
+											<!--页眉，放置标题-->
+								
+											<!--内容区-->
+											<div class="mui-card-content mui-card-media" style="height:35vw;width:auto;">
+												<img src="?" id="img4"/>
+											</div>
+											<!--页脚，放置补充信息或支持的操作-->
+											<div class="mui-card-footer">
+												<div class="mui-media-body">
+													<a href=""><span class="mui-icon iconfont icon-xiazai" style="color: #999999;"></span></a>
+												</div>
+												<div class="mui-media-body">
+													<a href="" ><span class="mui-icon iconfont icon-aixin" style="color: #999999;"></a>
+												</div>
+											</div>
+										</div>
+										<div class="mui-card">
+											<!--页眉，放置标题-->
+								
+											<!--内容区-->
+											<div class="mui-card-content mui-card-media" style="height:35vw;width:auto;">
+												<img src="?" id="img5"/>
+											</div>
+											<!--页脚，放置补充信息或支持的操作-->
+											<div class="mui-card-footer">
+												<div class="mui-media-body">
+													<a href=""><span class="mui-icon iconfont icon-xiazai" style="color: #999999;"></span></a>
+												</div>
+												<div class="mui-media-body">
+													<a href="" ><span class="mui-icon iconfont icon-aixin" style="color: #999999;"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div id="item2mobile" class="mui-slider-item mui-control-content mui-active" >
+						<div id="scroll1" class="mui-scroll-wrapper" >
+							<div class="mui-scroll" >
+								<div class="grzx">
+									<div class="header">
+		
+									</div>
+	
+									<div class="content">
+										<div class="con1">
+											<span>H.A</span>
+											<img src="images/headerPicture.png">
+										</div>
+										
+										<div class="a1">
+											<span>我的下载</span>
+										</div>
+										
+										<div class="b1">
+											<span>我的收藏</span>
+										</div>	
+										
+										<div class="c1">
+											<span>我的创意</span>
+										</div>
+										
+										<div class="d1">
+											<span>意见反馈</span>
+										</div>
+	
+										<div class="e1">
+											<input type="button" value="退出登录" style="font-family: 微软雅黑;background-color:rgba(255,47,47,0.66);border-radius:4vw;height: 7vh;width: 70vw;"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				
+				</div>
+				
+				
+			</div>
+
+		</div>
+		
+		
+		
+	</div>
+
+</body>
+</html>
