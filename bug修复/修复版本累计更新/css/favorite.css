@@ -3,14 +3,14 @@
 					padding: 0px;
 				}
 				
-				.total{
+			.Ftotal{
 				width:100vw;
 				height:92vh;
 				margin:0 auto;
 				position: relative;
 				/*background:green;*/
 				}
-			.total .header{
+			.Ftotal .header{
 				width:100vw;
 				height:8vh;
 				margin:0 auto;
@@ -19,40 +19,40 @@
 				position: absolute;
 				
 			}
-			 .total .header span{
+			 .Ftotal .header span{
 				font-family: "微软雅黑";
 				font-size:3.5vh ;
 				color:white;
 				line-height: 10vh;
 				
 			}
-			.total .content{
+			.Ftotal .Fcontent{
 				width:100vw;
 				height:70vh;
 				margin:0 auto;
 				
 			}
-			.total .content img{
+			.Ftotal .Fcontent img{
 				width:100vw;
 				height:86.5vh;
 			}
-			.total .footer{
+			.Ftotal .Ffooter{
 				width:100vw;
 				height:7vh;
 				margin:0 auto;
 				/*background: red;*/
 				position: absolute;
 				top:86.5vh;
-				
+	
 				
 			}
-			.total .footer .f1{
+			.Ftotal .Ffooter .f1{
 				width:25vw;
 				height:6.5vh;
 				/*background: blue;*/
 				float: left;
 			}
-			.total .footer .f2{
+			.Ftotal .Ffooter .f2{
 				width:50vw;
 				height:6.5vh;
 				/*background: yellow;*/
@@ -62,16 +62,16 @@
 				background-color:white;
 				opacity: 0.9;
 			}
-			.total .footer .f3{
+			.Ftotal .Ffooter .f3{
 				width:25vw;
 				height:6.5vh;
 				/*background: green;*/
 				float:right;
 			}
-			.total .footer .f1 input{
+			.Ftotal .Ffooter .f1 input{
 				font-family: "微软雅黑";
 			}
-			.total .footer .f3 input{
+			.Ftotal .Ffooter .f3 input{
 				font-family: "微软雅黑";
 			}
 			
