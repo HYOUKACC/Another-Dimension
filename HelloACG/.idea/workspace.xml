@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="WAR" />
+      <artifact name="HelloACG:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -18,51 +18,55 @@
     <session id="1589467179">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="7" />
-          <entry key="html" value="8" />
-          <entry key="iml" value="5" />
-          <entry key="java" value="54" />
+          <entry key="class" value="9" />
+          <entry key="html" value="21" />
+          <entry key="iml" value="6" />
+          <entry key="java" value="105" />
           <entry key="jsp" value="3" />
           <entry key="resource" value="1" />
-          <entry key="xml" value="24" />
+          <entry key="xml" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="7" />
-          <entry key="HTML" value="8" />
-          <entry key="IDEA_MODULE" value="5" />
-          <entry key="JAVA" value="54" />
+          <entry key="CLASS" value="9" />
+          <entry key="HTML" value="21" />
+          <entry key="IDEA_MODULE" value="6" />
+          <entry key="JAVA" value="105" />
           <entry key="JSP" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="24" />
+          <entry key="XML" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="42" />
-          <entry key="html" value="312" />
-          <entry key="java" value="1501" />
-          <entry key="xml" value="58" />
+          <entry key="html" value="1073" />
+          <entry key="java" value="2379" />
+          <entry key="xml" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="312" />
-          <entry key="JAVA" value="1501" />
+          <entry key="HTML" value="1073" />
+          <entry key="JAVA" value="2379" />
           <entry key="PLAIN_TEXT" value="42" />
-          <entry key="XML" value="58" />
+          <entry key="XML" value="64" />
         </counts>
       </usages-collector>
     </session>
@@ -70,10 +74,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Servlet/login/LoginServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/DAO/user/GetUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            <state relative-caret-position="361">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,13 +86,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAO/imgesURL/GetURL.java">
+        <entry file="file://$PROJECT_DIR$/src/DAO/user/User.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAO/user/UserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Servlet/imagesURL/ImagesServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -103,24 +122,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Servlet/login/UserJSON.java">
+        <entry file="file://$PROJECT_DIR$/src/DAO/imgesURL/GetURL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding>
-                <element signature="e#164#165#0" expanded="true" />
-                <element signature="e#193#194#0" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="114">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -128,59 +133,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DAO/imgesURL/ImgesURL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="247">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.html">
+        <entry file="file://$PROJECT_DIR$/src/thumbnails/ThumbnailTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Servlet/imagesURL/ImagesServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-123">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Servlet/imagesURL/URLJSON.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="285">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding>
-                <element signature="e#80#81#0" expanded="true" />
-                <element signature="e#106#107#0" expanded="true" />
-                <element signature="e#146#147#0" expanded="true" />
-                <element signature="e#176#177#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/junit-4.0 (1).jar!/org/junit/internal/requests/ClassRequest.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAO/user/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -192,6 +176,7 @@
       <list>
         <option value="package-info" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -214,22 +199,32 @@
         <option value="$PROJECT_DIR$/src/DAO/imgesURL/Images.hbm.xml" />
         <option value="$PROJECT_DIR$/src/DAO/login/Login.java" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/DAO/login/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/DAO/login/getUser.java" />
         <option value="$PROJECT_DIR$/src/Servlet/Ajax2.java" />
         <option value="$PROJECT_DIR$/src/Servlet/imagesURL/URLJson.java" />
-        <option value="$PROJECT_DIR$/src/DAO/login/GetUser.java" />
-        <option value="$PROJECT_DIR$/src/DAO/login/User.java" />
-        <option value="$PROJECT_DIR$/src/Servlet/login/UserJSON.java" />
-        <option value="$PROJECT_DIR$/src/utils/HibernateUtil.java" />
-        <option value="$PROJECT_DIR$/src/Servlet/login/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/Servlet/imagesURL/Ajax2.java" />
         <option value="$PROJECT_DIR$/src/DAO/imgesURL/GetURL.java" />
-        <option value="$PROJECT_DIR$/src/Servlet/imagesURL/ImagesServlet.java" />
-        <option value="$PROJECT_DIR$/web/login.html" />
-        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/resource/web.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/Servlet/imagesURL/ImagesServlet.java" />
+        <option value="$PROJECT_DIR$/src/DAO/login/GetUser.java" />
+        <option value="$PROJECT_DIR$/src/DAO/login/User.java" />
+        <option value="$PROJECT_DIR$/src/DAO/login/User.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/Servlet/login/UserJSON.java" />
+        <option value="$PROJECT_DIR$/web/login.html" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/example.html" />
+        <option value="$PROJECT_DIR$/web/example.html" />
+        <option value="$PROJECT_DIR$/src/DAO/login/UserDAO.java" />
+        <option value="$PROJECT_DIR$/web/login2.html" />
+        <option value="$PROJECT_DIR$/src/utils/HibernateUtil.java" />
+        <option value="$PROJECT_DIR$/src/DAO/user/User.java" />
+        <option value="$PROJECT_DIR$/src/DAO/user/GetUser.java" />
+        <option value="$PROJECT_DIR$/src/Servlet/login/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/Servlet/imagesURL/URLJSON.java" />
+        <option value="$PROJECT_DIR$/src/DAO/user/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/init/InitServlet.java" />
+        <option value="$PROJECT_DIR$/src/thumbnails/ThumbnailTest.java" />
       </list>
     </option>
   </component>
@@ -247,15 +242,16 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1693" />
-    <option name="height" value="1398" />
+    <option name="x" value="-8" />
+    <option name="y" value="12" />
+    <option name="width" value="1505" />
+    <option name="height" value="1373" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,27 +273,13 @@
               <item name="HelloACG" type="b2602c69:ProjectViewProjectNode" />
               <item name="HelloACG" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+              <item name="thumbnails" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HelloACG" type="b2602c69:ProjectViewProjectNode" />
               <item name="HelloACG" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HelloACG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HelloACG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="imagesURL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HelloACG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HelloACG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HelloACG" type="b2602c69:ProjectViewProjectNode" />
@@ -310,11 +292,19 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HelloACG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloACG" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -322,7 +312,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544444401501" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544632995136" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -332,16 +322,21 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="utils" />
-      <recent name="test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\JAVA\HelloACG\web\WEB-INF\lib" />
       <recent name="C:\JAVA\HelloACG\src\DAO\login" />
       <recent name="C:\JAVA\HelloACG\resource" />
       <recent name="C:\JAVA\HelloACG\src" />
       <recent name="C:\JAVA\HelloACG\src\DAO" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utils" />
+      <recent name="test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JAVA\HelloACG\web" />
+      <recent name="C:\JAVA\HelloACG\web\WEB-INF" />
+      <recent name="C:\JAVA\HelloACG\web\WEB-INF\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -356,24 +351,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.34">
-    <configuration name="All Features in: HelloACG" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="3" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="HelloACG" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
-      <option name="SUGGESTED_NAME" value="All Features in: HelloACG" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ThumbnailTest.test">
     <configuration name="GetURL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HelloACG" />
       <extension name="coverage">
@@ -404,33 +382,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetURL.test0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetUser.getUrl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HelloACG" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DAO.imgesURL.*" />
+          <option name="PATTERN" value="DAO.user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="DAO.imgesURL" />
-      <option name="MAIN_CLASS_NAME" value="DAO.imgesURL.GetURL" />
-      <option name="METHOD_NAME" value="test0" />
+      <option name="PACKAGE_NAME" value="DAO.user" />
+      <option name="MAIN_CLASS_NAME" value="DAO.user.GetUser" />
+      <option name="METHOD_NAME" value="getUrl" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetUser.getUrl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThumbnailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HelloACG" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DAO.login.*" />
+          <option name="PATTERN" value="thumbnails.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="DAO.login" />
-      <option name="MAIN_CLASS_NAME" value="DAO.login.GetUser" />
-      <option name="METHOD_NAME" value="getUrl" />
+      <option name="PACKAGE_NAME" value="thumbnails" />
+      <option name="MAIN_CLASS_NAME" value="thumbnails.ThumbnailTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThumbnailTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HelloACG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thumbnails.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="thumbnails" />
+      <option name="MAIN_CLASS_NAME" value="thumbnails.ThumbnailTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -542,19 +534,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 8.5.34" />
-      <item itemvalue="JUnit.GetURL.test0" />
-      <item itemvalue="Cucumber java.All Features in: HelloACG" />
       <item itemvalue="JUnit.GetUser.getUrl" />
       <item itemvalue="JUnit.GetURL.getUrl" />
       <item itemvalue="JUnit.GetURL" />
+      <item itemvalue="JUnit.ThumbnailTest" />
+      <item itemvalue="JUnit.ThumbnailTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThumbnailTest.test" />
+        <item itemvalue="JUnit.ThumbnailTest" />
         <item itemvalue="JUnit.GetUser.getUrl" />
         <item itemvalue="JUnit.GetURL.getUrl" />
         <item itemvalue="JUnit.GetURL" />
-        <item itemvalue="Cucumber java.All Features in: HelloACG" />
-        <item itemvalue="JUnit.GetURL.test0" />
       </list>
     </recent_temporary>
   </component>
@@ -576,44 +568,52 @@
       <workItem from="1544443002483" duration="304000" />
       <workItem from="1544443345706" duration="120000" />
       <workItem from="1544443508662" duration="550000" />
-      <workItem from="1544444140305" duration="244000" />
+      <workItem from="1544444140305" duration="30336000" />
+      <workItem from="1544625256734" duration="649000" />
+      <workItem from="1544626137703" duration="62000" />
+      <workItem from="1544626557866" duration="85000" />
+      <workItem from="1544627128932" duration="49000" />
+      <workItem from="1544627226493" duration="240000" />
+      <workItem from="1544627505541" duration="268000" />
+      <workItem from="1544627811929" duration="46000" />
+      <workItem from="1544627909040" duration="3850000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="getUser_getUrl - 2018.12.10 at 03h 55m 41s.xml">
-      <configuration name="getUser.getUrl" configurationId="JUnit" />
+    <history-entry file="ThumbnailTest_test - 2018.12.12 at 23h 49m 34s.xml">
+      <configuration name="ThumbnailTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="getUser_getUrl - 2018.12.10 at 03h 56m 51s.xml">
-      <configuration name="getUser.getUrl" configurationId="JUnit" />
+    <history-entry file="ThumbnailTest_test - 2018.12.12 at 23h 49m 54s.xml">
+      <configuration name="ThumbnailTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="getUser_getUrl - 2018.12.10 at 03h 59m 04s.xml">
-      <configuration name="getUser.getUrl" configurationId="JUnit" />
+    <history-entry file="ThumbnailTest_test - 2018.12.12 at 23h 50m 19s.xml">
+      <configuration name="ThumbnailTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="getUser_getUrl - 2018.12.10 at 03h 59m 19s.xml">
-      <configuration name="getUser.getUrl" configurationId="JUnit" />
+    <history-entry file="ThumbnailTest_test - 2018.12.12 at 23h 50m 28s.xml">
+      <configuration name="ThumbnailTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="getUser_getUrl - 2018.12.10 at 04h 03m 30s.xml">
-      <configuration name="getUser.getUrl" configurationId="JUnit" />
+    <history-entry file="ThumbnailTest_test - 2018.12.12 at 23h 50m 55s.xml">
+      <configuration name="ThumbnailTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="getUser_getUrl - 2018.12.10 at 04h 03m 56s.xml">
-      <configuration name="getUser.getUrl" configurationId="JUnit" />
+    <history-entry file="ThumbnailTest_test - 2018.12.12 at 23h 53m 26s.xml">
+      <configuration name="ThumbnailTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="getUser_getUrl - 2018.12.10 at 04h 04m 27s.xml">
-      <configuration name="getUser.getUrl" configurationId="JUnit" />
+    <history-entry file="ThumbnailTest_test - 2018.12.12 at 23h 53m 59s.xml">
+      <configuration name="ThumbnailTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="getUser_getUrl - 2018.12.10 at 04h 07m 46s.xml">
-      <configuration name="getUser.getUrl" configurationId="JUnit" />
+    <history-entry file="ThumbnailTest_test - 2018.12.13 at 00h 02m 00s.xml">
+      <configuration name="ThumbnailTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="getUser_getUrl - 2018.12.10 at 04h 08m 11s.xml">
-      <configuration name="getUser.getUrl" configurationId="JUnit" />
+    <history-entry file="ThumbnailTest_test - 2018.12.13 at 00h 12m 38s.xml">
+      <configuration name="ThumbnailTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="getUser_getUrl - 2018.12.10 at 04h 08m 39s.xml">
-      <configuration name="getUser.getUrl" configurationId="JUnit" />
+    <history-entry file="ThumbnailTest_test - 2018.12.13 at 00h 13m 06s.xml">
+      <configuration name="ThumbnailTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23584000" />
+    <option name="totallyTimeSpent" value="58925000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -625,10 +625,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1354" height="1118" extended-state="0" />
+    <frame x="-6" y="10" width="1204" height="1098" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49921754" visible="true" weight="0.17978396" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49705014" visible="true" weight="0.15095986" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -636,11 +636,11 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Capture Tool" order="7" />
-      <window_info id="Web" order="8" sideWeight="0.5007825" side_tool="true" weight="0.25419664" />
+      <window_info id="Web" order="8" sideWeight="0.50294983" side_tool="true" weight="0.116267465" />
       <window_info id="Persistence" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32906976" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499002" visible="true" weight="0.31440163" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.499002" visible="true" weight="0.35403726" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -648,7 +648,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32906976" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32906976" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.500998" side_tool="true" weight="0.34909457" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.499501" weight="0.32454363" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.499501" weight="0.43326038" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
@@ -671,10 +671,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/resource" />
     <entry file="file://$PROJECT_DIR$/resource/rebel.xml" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml" />
     <entry file="file://$PROJECT_DIR$/resource/struts.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/Ajax2.java" />
     <entry file="file://$PROJECT_DIR$/src/Contro/Action.java" />
@@ -683,20 +686,6 @@
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/junit-4.9.jar!/org/junit/internal/requests/ClassRequest.class" />
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/junit-4.9.jar!/org/junit/internal/requests/FilterRequest.class" />
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/junit-4.9.jar!/org/junit/internal/builders/JUnit4Builder.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/ReferenceQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="143" selection-start-line="143" selection-end-line="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.40-bin.jar!/com/mysql/jdbc/AbandonedConnectionCleanupThread.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/LockSupport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -719,21 +708,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/log4j2.xml" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10849">
-          <caret line="623" selection-start-line="623" selection-end-line="623" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13148">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/imgesURL/package-info.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/security/SecureClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -766,31 +741,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/login/User.hbm.xml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        <state relative-caret-position="506">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/login/User.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="28" />
+        <state relative-caret-position="192">
+          <caret line="1133" selection-start-line="1133" selection-end-line="1133" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        <state relative-caret-position="192">
+          <caret line="765" selection-start-line="765" selection-end-line="765" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/HibernateUtil.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="399">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -801,20 +776,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/login/GetUser.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/ReferenceQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="23" selection-end-column="28" />
+        <state relative-caret-position="332">
+          <caret line="143" selection-start-line="143" selection-end-line="143" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/imgesURL/GetURL.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.40-bin.jar!/com/mysql/jdbc/AbandonedConnectionCleanupThread.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        <state relative-caret-position="437">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlet/login/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/init/InitServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlet/login/UserJSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlet/imagesURL/URLJSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#80#81#0" expanded="true" />
+            <element signature="e#106#107#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlet/imagesURL/ImagesServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/user/GetUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/user/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/user/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -825,82 +920,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/imgesURL/GetURL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/imgesURL/ImgesURL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="247">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.html">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/junit-4.0 (1).jar!/org/junit/internal/requests/ClassRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="209">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlet/login/LoginServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/thumbnails/ThumbnailTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        <state relative-caret-position="285">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlet/login/UserJSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlet/imagesURL/ImagesServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-123">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlet/imagesURL/URLJSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#80#81#0" expanded="true" />
-            <element signature="e#106#107#0" expanded="true" />
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#t").click(function(){
+                $.post("http://localhost:8080/loginServlet",
+                    $("#f").serialize(),
+                    function(data,status){
+                        if(data=="false"){
+                            alert("false");
+                            //这里需要结束这个函数
+                        }
+                        var obj = JSON.parse(data);
+                        // 昵称：  obj.nickName
+                        // 头像URL : obj.profilePictureURL
+
+                        alert(obj.userId + obj.nickName + obj.profilePictureURL);
+                        $("#url").html(obj.profileURL);
+                        $("#nickName").html(obj.nickName);
+                    });
+            });
+        });
+    </script>
+</head>
+<body>
+
+<form id="f" method="post">
+    用户名：<input type="text" name="userId"/><br/><br/>
+    密码：<input type="password" name="passWord"/><br/><br/>
+    <input type="submit" id="t"/>
+</form>
+
+</body>
+</html>

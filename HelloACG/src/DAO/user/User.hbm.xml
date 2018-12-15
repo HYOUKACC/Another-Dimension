@@ -3,7 +3,7 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="DAO.login.User" table="user" >
+    <class name="DAO.user.User" table="user" >
         <!--建立类属性哪一个是主键  还要跟数据库当中主键进行对应-->
         <id name="number" column="number" >
             <generator class="native"/>
@@ -13,6 +13,7 @@
         <property name="userId" column="userId" />
         <property name="password" column="password"/>
         <property name="nickName" column="nickname"/>
+        <property name="profilePictureURL" column="profile_picture_URL"/>
 <!--
 
         &lt;!&ndash;一对多&ndash;&gt;
