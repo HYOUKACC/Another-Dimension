@@ -4,8 +4,8 @@
 		}
 
 #singMax{
-	background: url(../images/singIN.jpeg) no-repeat;
-	background-size: 100vw,90vh;
+	background: url(../images/singIN.jpeg);
+	background-size: 100vw,110vh;
 	width: 100vw;
 	height: 100vh;
 }
@@ -17,7 +17,7 @@
 	top: 10vw;
 	margin-right: auto;
 	margin-left: auto;
-	background: url(../images/singIN.jpeg);
+	/*background: url(../images/singIN.jpeg);*/
 }
 
 #lz{
