@@ -1,0 +1,37 @@
+*{
+			margin: 0px;
+			padding: 0px;
+		}
+
+#singMax{
+	background: url(../images/singIN.jpeg) no-repeat;
+	background-size: 100vw,90vh;
+	width: 100vw;
+	height: 100vh;
+}
+
+#singIn{
+	opacity: 0.6;
+	width: 80vw;
+	position: relative;	
+	top: 10vw;
+	margin-right: auto;
+	margin-left: auto;
+	background: url(../images/singIN.jpeg);
+}
+
+#lz{
+	
+	position: absolute;
+	width: 11vw;
+	height: 20vw;
+	display: none;
+	
+}
+
+.mui-input-group{
+	
+	height: 40vw;
+}
+
+

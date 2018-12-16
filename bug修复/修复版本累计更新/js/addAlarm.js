@@ -2,6 +2,7 @@
 mui.plusReady(function(){
       	 		//在mui启动的时候就开始注册函数，为button绑定点击事件
             //
+            
           // var sender=null;
            //var alarm=null;
            var hour=null;
@@ -357,7 +358,22 @@ mui.plusReady(function(){
                 var d = new Date();
                 return d.getFullYear() +  "-" +  (d.getMonth() + 1)  + "-"  + d.getDate() + " "  + d.getHours() +  ":"  + d.getMinutes()  + ":" +  d.getSeconds();
     };
-             
+     
+     
+    
+    //允许程序后台运行
+    function wakeLock() {//电源锁
+    	//Android
+    	debugger
+    	var main = plus.android.runtimeMainActivity();
+    	var Context = plus.android.importClass("android.content.Context");
+    	var PowerManager = plus.android.importClass("android.os.PowerManager");
+    	var pm = main.getSystemService(Context.POWER_SERVICE);
+    	g_wakelock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "ANY_NAME");
+    	g_wakelock.acquire(100);//100ms后释放锁
+    	console.log("加锁");
+    }
+     
      
     (function($) {//用于删除当前时钟
 								
@@ -384,7 +400,7 @@ mui.plusReady(function(){
 							}
 						});
 					}else{
-						console.log(id);
+						//console.log(id);
 						setTimeout(function() {
 									$.swipeoutClose(li);
 								}, 0);
